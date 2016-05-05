@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>VenMe - Login</title>
+		<meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link rel="stylesheet" type='text/css' href="loginScreen.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!--//webfonts-->
+</head>
+<body ng-app="myApp" ng-controller="formCtrl">
+				 <!-----start-main---->
+				<div class="login-form" >
+						<h1>Sign In</h1>
+						<h2><a href="#">Create Account</a></h2>
+				<form>
+					<li>
+            <input type="text" class="text" ng-model="username" placeholder="Email"><a href="#" class=" icon user"></a>
+					</li>
+					<li>
+            <input type="password" ng-model="password" placeholder="Password"><a href="#" class=" icon lock"></a>
+					</li>
+
+					 <div class ="forgot">
+						<h3><a href="#">Forgot Password?</a></h3>
+						<button class="btn" style="vertical-align:middle" ng-click="login()"><span>Sign In </span></button>
+						<button ng-click="register()"><span>Register Here </span></button>
+					</div>
+				</form>
+			</div>
+			<!--//End-login-form-->
+				
+       <script src="loginScreen.js"></script>
+
+
+		  <!-----start-copyright---->
+   					<!--<div class="copy-right">
+						<p>Template by <a href="http://w3layouts.com">w3layouts</a></p>
+					</div>
+				<!-----//end-copyright---->
+
+</body>
+</html>
